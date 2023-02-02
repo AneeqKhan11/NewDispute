@@ -4,16 +4,16 @@ import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 const NewPassword = () => {
     return (
-        <View style={styles.LoginScreen}>
+        <View style={styles.NewPasswordScreen}>
             <View style={styles.TopBra}><TouchableOpacity style={styles.Button} ><Ionicons name='chevron-back' size={25} color='#F6A60E' /></TouchableOpacity></View>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <View style={styles.LoginBox}>
+                <View style={styles.NewPasswordBox}>
                     <DisputeLogo />
-                    <View style={styles.LoginText}>
-                        <Text style={styles.LoginText_A}>
+                    <View style={styles.NewPasswordText}>
+                        <Text style={styles.NewPasswordText_A}>
                             New Password
                         </Text>
-                        <Text style={styles.LoginText_B}>
+                        <Text style={styles.NewPasswordText_B}>
                             Enter your new password
                         </Text>
                     </View>
@@ -30,49 +30,17 @@ const NewPassword = () => {
 export default NewPassword
 
 const styles = StyleSheet.create({
-
-
-    
-    Login_SignUp_Text: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        color: '#F4A236'
-    },
-    Login_CreateAccount_Text: {
-        fontSize: 14,
-    },
-    Login_CreateAccount_Div: {
-        height: 40,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        paddingRight: 20,
-        alignItems: "center"
-    },
-    Login_Reset_Text: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        color: '#F4A236'
-    },
-    Login_forgotPass_Text: {
-        fontSize: 14,
-    },
-    Login_forgotPass_Div: {
-        height: 40,
-        flexDirection: 'row',
-        justifyContent: 'flex-end',
-
-    },
-    LoginText_B: {
+    NewPasswordText_B: {
         fontSize: 18,
         color: "black",
         fontWeight: "bold"
     },
-    LoginText_A: {
+    NewPasswordText_A: {
         fontSize: 25,
         color: "black",
         fontWeight: "bold"
     },
-    LoginText: {
+    NewPasswordText: {
         height: 100,
         justifyContent: "center",
         alignItems: 'center'
@@ -93,10 +61,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    LoginBox: {
+    NewPasswordBox: {
         flex: 1,
     },
-    LoginScreen: {
+    NewPasswordScreen: {
         flex: 1,
         justifyContent: "center",
         alignContent: 'center',

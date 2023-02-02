@@ -1,15 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
-import { ForgetPassword, Login , NewPassword, Signup} from './src/screens'
 import { NavigationContainer } from '@react-navigation/native'
+import { AuthStuckScreen } from './src/navigation'
+import { Home } from './src/screens'
 
 const App = () => {
   return (
     <NavigationContainer>
-      {/* <Login /> */}
-      {/* <Signup/> */}
-      {/* <ForgetPassword/> */}
-      <NewPassword/>
+      {/* <AuthStuckScreen/> */}
+      <Home/>
     </NavigationContainer>
   )
 }
